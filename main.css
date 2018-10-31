@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,900');
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.HPU {
+    width:300px;
+    height:600px;
+    background:#161313;
+    color:#fff;
+    margin:0 auto;
+}
+
+.leaderboard {
+    width:970px;
+    height:250px;
+    background:#161313;
+    color:#fff;
+    margin:45px auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.HPU .flex-container {
+    flex-direction: column;
+}
+
+.leaderboard .flex-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height:100%;
+}
+
+
+.leaderboard .flex-element {
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+}
+
+.leaderboard .flex-element.text {
+    width: 40%;
+    align-content: center;
+    align-items: center;
+    align-self:center;
+}
+
+.HPU img.narsLogo {
+    width:80%;
+    height:auto;
+    margin:0px auto 0;
+    display:block;
+}
+
+.HPU img.elementSplash {
+    width:90%;
+    height:auto;
+    margin:45px 0;
+}
+
+.leaderboard img.narsLogo {
+    width:40%;
+    margin-top:15px
+}
+
+.leaderboard img.elementSplash {
+    width:85%;
+}
+
+.text {
+    text-align: center;
+}
+
+.mask {
+    position:relative;
+    overflow: hidden;
+    height:2.5em;
+    width:250px;
+    margin:0 auto;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    animation: slideUp 1s 0.8s ease-out 1;
+    -webkit-animation: slideUp 1s 0.8s ease-out 1;
+    -moz-animation: slideUp 1s 0.8s ease-out 1;
+    -o-animation: slideUp 1s 0.8s ease-out 1;
+    animation-fill-mode: both;
+}
+
+.mask.small {
+    height:1.05em;
+}
+
+h2 {
+    width: 100%;
+    position: absolute;
+    font-weight: 300;
+    font-size: 1.05em;
+    line-height: 1;
+    letter-spacing:0.1px;
+    margin: 0;
+    animation: slideDown 0.8s 0s ease-out 1;
+    -webkit-animation: slideDown 0.8s 0s ease-out 1;
+    -moz-animation: slideDown 0.8s 0s ease-out 1;
+    -o-animation: slideDown 0.8s 0s ease-out 1;
+    animation-fill-mode: both;
+}
+
+
+
+span.color{
+    color:#0b86c3;
+}
+
+.cta {
+    padding: 2px 15px;
+    display: inline-block;
+    border: 1px solid #fff;
+    margin: 15px 0 0;
+    animation: fadeIn 0.5s 1.8s ease-out 1;
+    -webkit-animation: fadeIn -.5s 1.8s ease-out 1;
+    -moz-animation: fadeIn 0.5s 1.8s ease-out 1;
+    -o-animation: fadeIn 0.5s 1.8s ease-out 1;
+    animation-fill-mode: both;
+    transition:all 0.2s ease-in;
+    -moz-transition:all 0.2s ease-in;
+    -o-transition:all 0.2s ease-in;
+    -webkit-transition:all 0.2s ease-in;
+}
+
+.cta:focus,.cta:hover{
+    background:#fff;
+    color:#333;
+    transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    -webkit-transition:all 0.2s ease-out;
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        bottom:-100px;
+    } 100% {
+        bottom:-16px
+    }
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        bottom:-100px;
+    } 100% {
+        bottom:-16px
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        bottom:-100px;
+    } 100% {
+        bottom:-16px
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        bottom:-100px;
+    } 100% {
+        bottom:-16px
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity:0;
+    } 100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+    } 100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+    } 100% {
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    } 100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        top:-100px;
+    } 100% {
+        top:0px
+    }
+}
+
+@-moz-keyframes slideDown {
+    0% {
+        top:-100px;
+    } 100% {
+        top:0px
+    }
+}
+
+@-o-keyframes slideDown {
+    0% {
+        top:-100px;
+    } 100% {
+        top:0px
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top:-100px;
+    } 100% {
+        top:0px
+    }
+}
